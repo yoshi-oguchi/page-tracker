@@ -10,13 +10,14 @@ version = "1.0.0"
 dependencies = [
     "Flask",
     "redis",
-    "requests",
+    "gunicorn",
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest",
     "pytest-timeout",
+    "requests",
     "bandit",
     "black",
     "flake8",
